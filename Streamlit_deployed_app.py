@@ -12,9 +12,9 @@ stdscalar = "mean_std_values.pkl"
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
 
-# Load the scaler parameters
-with open(stdscalar, 'rb') as f:
-    mean_std_values = pickle.load(f)
+# # Load the scaler parameters
+# with open(stdscalar, 'rb') as f:
+#     mean_std_values = pickle.load(f)
 
 def main():
     st.title('Heart Disease Prediction')
@@ -67,7 +67,8 @@ def main():
         scaler = StandardScaler()
         scaler.mean_ = mean_std_values['mean']
         scaler.scale_ = mean_std_values['std']
-        user_input_scaled = scaler.transform(user_input)
+        # user_input_scaled = scaler.transform(user_input)
+        user_input_scaled = user_input
         
         # Making predictions
         prediction = model.predict(user_input_scaled)
