@@ -4,8 +4,8 @@ import pickle
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 
-model_filename = r"C:\Users\HP\Desktop\Project (Final Year)\HDP 2\model.pkl"
-stdscalar = r"C:\Users\HP\Desktop\Project (Final Year)\HDP 2\mean_std_values.pkl"
+model_filename = "model.pkl"
+stdscalar = "mean_std_values.pkl"
 # model_filename = r"C:\Users\HP\Desktop\Project (Final Year)\HDP 2\Ensembled_model.pkl"
 
 # Load the model
