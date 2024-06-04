@@ -64,9 +64,9 @@ def main():
         })
         
         # Standardizing the user input
-        scaler = StandardScaler()
-        scaler.mean_ = mean_std_values['mean']
-        scaler.scale_ = mean_std_values['std']
+        # scaler = StandardScaler()
+        # scaler.mean_ = mean_std_values['mean']
+        # scaler.scale_ = mean_std_values['std']
         # user_input_scaled = scaler.transform(user_input)
         user_input_scaled = user_input
         
